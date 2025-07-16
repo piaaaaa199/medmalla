@@ -1,0 +1,11 @@
+const malla = document.getElementById('malla');
+
+// Cambia el número de celdas según quieras (por ejemplo 16 para 4x4)
+const totalCeldas = 16;
+
+for (let i = 1; i <= totalCeldas; i++) {
+  const celda = document.createElement('div');
+  celda.innerText = `C${i}`;
+  celda.onclick = () => alert(`¡Hiciste click en la Celda ${i}!`);
+  malla.appendChild(celda);
+}
